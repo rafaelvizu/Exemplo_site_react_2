@@ -21,7 +21,7 @@ function Author() {
                     <h3>Sobre esse projeto</h3>
                     <hr/>
                     <p>
-                         Projeto feito em react.js, onde tento focar mais no desing. Aqui temos um site responsivo, que pode
+                         Projeto feito em react.js, onde tento focar mais no design. Aqui temos um site responsivo, que pode
                          ser acessado de qualquer aparelho.
                     </p>
                </div>
