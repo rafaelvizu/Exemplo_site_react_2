@@ -145,6 +145,33 @@ nav > .link:hover {
   line-height: 1.5em;
 }
 
+.error {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.error > h2 {
+  color: white;
+  font-family: var(--manrope);
+  font-size: 3em;
+}
+
+.error > p {
+  color: rgba(255, 255, 255, 0.705);
+  font-size: 1.5em;
+  padding: 10px 0px;
+}
+
+
+.error > p > .link {
+  color: white;
+  text-decoration: none;
+}
+
+.error > p > .link:hover {
+  color: rgba(255, 255, 255, 0.705);
+  text-decoration: underline;
+}
 
 
 @media  (max-width: 500px) {
