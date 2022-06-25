@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  --primary_light_cyan: hsl(193, 38%, 86%);
+  --Primary_neon_green: hsl(150, 100%, 66%);
+
+  --neutral_grayish_blue: hsl(217, 19%, 38%);
+  --neutral_dark_grayish_blue: hsl(217, 19%, 24%);
+  --neutral_dark_blue: hsl(218, 23%, 16%);
+
+  --manrope: 'Manrope', sans-serif;
+}
+
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral_dark_blue);
+}
+header {
+  background-color: var(--Primary_neon_green);
+  padding: 50px;
+  text-align: center;
+}
+
+header > .link {
+  text-decoration: none;
+}
+
+header > .link > h1 {
+  font-size: 2em;
+  font-family: var(--manrope);
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  text-align: center;
+  background-color: var(--Primary_neon_green);
+  padding: 10px;
+}
+
+nav > .link {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: var(--neutral_dark_blue);
+}
+
+nav > .link:hover {
+  text-decoration: underline;
+  color: var(--neutral_grayish_blue);
+}
+
+
+.home {
+  font-weight: var(--manrope);
+}
+
+.home > img {
+  border: var(--neutral_dark_blue) 10px solid;
+  border-radius: 1em;
+}
+
+
+.home > p {
+  color: white;
+  line-height: 1.5em;
+  text-align: justify;
+  text-indent: 2em;
+
+  
+}
+
+
+/* Sobre */
+.sobre {
+  color: white;
+  
+}
+
+.sobre > p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.sobre > img {
+  border-radius: 1em;
+}
+
+
+.author-info-container > img {
+  border-radius: 50%;
+}
+
+.author_info {
+  text-align: center;
+}
+
+.author_info > h2 {
+  font-family: var(--manrope);
+  color: rgba(255, 255, 255, 0.822);
+  font-size: 3em;
+}
+
+.author_info > hr, .author_sobre_projeto > hr {
+  border-color: rgba(255, 255, 255, 0.5);
+  margin: 5px 0px;
+}
+
+.author_info > p {
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.author_info > a {
+  color: white;
+  padding: 10px;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.author_info > a:hover {
+  color: rgba(255, 255, 255, 0.644);
+  text-decoration: underline;
+}
+
+.author_sobre_projeto {
+  text-align: center;
+}
+
+.author_sobre_projeto > h3 {
+  color: rgba(255, 255, 255, 0.774);
+  font-size: 2em;
+}
+
+.author_sobre_projeto > p {
+  padding: 0px 20px;
+  color: white;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+
+
+@media  (max-width: 500px) {
+  .home, .sobre {
+    margin: 50px 0px;
+  }
+
+  .home > img, .sobre > img  {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .home > p, .sobre > p {
+    padding: 20px 20px 20px 20px;
+    font-size: 1.2em;
+  }
+
+  .author {
+    margin:  50px 0px;
+  }
+
+  .author-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+  }
+
+  .author-info-container > img {
+    width: 57vw;
+    height: 57vw;
+  }
+
+  .author_info {
+    padding: 10px;
+  }
+
+  .author_sobre_projeto {
+    padding: 5px 0px;
+  }
+}
+
+
+@media (min-width: 500px) and (max-width:1440px) {
+  .home {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home > img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+
+  .home > p {
+    width: 500px;
+    font-size: 1.7em;
+  }
+
+
+  .sobre {
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sobre > p {
+    width: 500px;
+  }
+
+  .sobre > img {
+    width: 500px;
+    height: 500px;
+    margin: 50px 0px;
+  }
+
+  .author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .author-info-container {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .author-info-container > img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .author_info {
+    padding: 50px;
+  }
+
+  .author_sobre_projeto {
+    width: 500px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+
+  .home {
+    display: flex;
+    padding: 50px 50px 10px 50px;
+    justify-content: center;
+  }
+
+  .home > img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .home > p {
+    width: 400px;
+    margin-left: 50px;
+    font-size: 1.5em;
+  }
+
+
+  .sobre {
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sobre > p {
+    width: 500px;
+  }
+
+  .sobre > img {
+    width: 500px;
+    height: 500px;
+    margin: 50px 0px;
+  }
+
+  .author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .author-info-container {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .author-info-container > img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .author_info {
+    padding: 50px;
+  }
+
+  .author_sobre_projeto {
+    width: 500px;
+  }
+
+}
