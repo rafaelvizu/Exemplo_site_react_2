@@ -1,4 +1,4 @@
-
+import img from '../../images/landscape.png'
 
 function Sobre() {
      

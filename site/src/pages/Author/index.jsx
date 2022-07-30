@@ -1,4 +1,4 @@
-
+import imgAutor from '../../images/author_image.jpg'
 
 function Author() {
 
@@ -6,7 +6,7 @@ function Author() {
           <main className="author">
                
                <div className="author-info-container">
-                    <img src="src/images/author_image.jpg"/>
+                    <img src={imgAutor}/>
                     <div className="author_info">
                          <h2>Rafael Vizú</h2>
                          <hr/>
