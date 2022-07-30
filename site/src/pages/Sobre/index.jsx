@@ -1,4 +1,4 @@
-import img from '../../images/landscape.png'
+import img from '../../images/paperwork.png'
 
 function Sobre() {
      
@@ -12,7 +12,7 @@ function Sobre() {
                     perferendis unde cum, explicabo perspiciatis facilis? Deserunt non ullam mollitia. Praesentium accusantium culpa dolorem 
                     ratione.
                </p>
-               <img src="src/images/paperwork.png"/>
+               <img src={img}/>
                <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium dolore tempore odio, iste repellendus aliquid
                      soluta illum aspernatur esse sapiente molestias autem ad, necessitatibus quod omnis reiciendis molestiae velit possimus.
